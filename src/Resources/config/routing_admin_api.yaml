@@ -1,0 +1,19 @@
+alengo_contact_account_extra_get_account_additional_data:
+    path: /account-additional-data/{id}
+    controller: Alengo\SuluContactAccountExtraBundle\Controller\Admin\AccountAdditionalDataController::getAction
+    methods: [GET]
+
+alengo_contact_account_extra_put_account_additional_data:
+    path: /account-additional-data/{id}
+    controller: Alengo\SuluContactAccountExtraBundle\Controller\Admin\AccountAdditionalDataController::putAction
+    methods: [PUT]
+
+alengo_contact_account_extra_get_contact_additional_data:
+    path: /contact-additional-data/{id}
+    controller: Alengo\SuluContactAccountExtraBundle\Controller\Admin\ContactAdditionalDataController::getAction
+    methods: [GET]
+
+alengo_contact_account_extra_put_contact_additional_data:
+    path: /contact-additional-data/{id}
+    controller: Alengo\SuluContactAccountExtraBundle\Controller\Admin\ContactAdditionalDataController::putAction
+    methods: [PUT]
