@@ -1,6 +1,8 @@
 {
     "name": "alengo/sulu-contact-account-extra-bundle",
     "description": "Additional Data tab for Sulu CMS Contacts and Accounts — generic JSON field with configurable forms",
+    "type": "symfony-bundle",
+    "homepage": "https://github.com/alengodev/SuluContactAccountExtraBundle",
     "license": "MIT",
     "authors": [
         {
