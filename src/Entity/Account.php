@@ -23,7 +23,7 @@ class Account extends SuluAccount
      */
     public function getAdditionalData(): array
     {
-        return $this->additionalData ?? [];
+        return $this->additionalData;
     }
 
     /**

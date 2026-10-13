@@ -23,7 +23,7 @@ class Contact extends SuluContact
      */
     public function getAdditionalData(): array
     {
-        return $this->additionalData ?? [];
+        return $this->additionalData;
     }
 
     /**
