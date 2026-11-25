@@ -45,9 +45,13 @@ class AccountAdditionalDataController implements SecuredControllerInterface
         return new JsonResponse(['id' => $account->getId()] + $account->getAdditionalData());
     }
 
+    /**
+     * Organizations, like Sulu's own AccountController — not the people context: a role with access to people but
+     * none to organizations must not read or overwrite the additional data of organizations.
+     */
     public function getSecurityContext(): string
     {
-        return ContactAdmin::CONTACT_SECURITY_CONTEXT;
+        return ContactAdmin::ACCOUNT_SECURITY_CONTEXT;
     }
 
     public function getLocale(Request $request): ?string
